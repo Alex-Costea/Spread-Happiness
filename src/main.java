@@ -101,7 +101,7 @@ public class main extends JFrame implements MouseListener, KeyListener {
    }
 
    private void readinfo() throws FileNotFoundException, IOException {
-      BufferedReader br = new BufferedReader(new FileReader("DO NOT DELETE"));
+      BufferedReader br = new BufferedReader(new FileReader("storedinfo.txt"));
       String line = br.readLine();
       this.highscore = Integer.parseInt(line);
 
@@ -120,7 +120,7 @@ public class main extends JFrame implements MouseListener, KeyListener {
       PrintWriter writer = null;
 
       try {
-         writer = new PrintWriter("DO NOT DELETE", "UTF-8");
+         writer = new PrintWriter("storedinfo.txt", "UTF-8");
          writer.println(this.highscore + "\n");
 
          for(int i = 1; i <= 30; ++i) {
