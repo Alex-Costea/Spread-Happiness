@@ -1,3 +1,3 @@
 # Spread Happiness!
 
-A project from 2014. Unfortunately, I only have the executable file now, with no source code.
+A project from 2014. I lost the original source code, so this is decompiled from source
